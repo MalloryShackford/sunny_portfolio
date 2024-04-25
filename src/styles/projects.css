@@ -1,0 +1,34 @@
+.project-container {
+	background: rgb(188, 203, 179, 0.6);
+	padding: 2rem;
+	border-radius: 8px;
+	margin: 11rem 4rem;
+}
+.project-item-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.item-container {
+	text-decoration: none;
+}
+
+.project-img {
+	width: 80%;
+	border-radius: 8px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.project-img {
+		width: 40%;
+		grid-template-columns: 1fr;
+	}
+	.project-item-container {
+		grid-template-columns: 1fr;
+	}
+}
