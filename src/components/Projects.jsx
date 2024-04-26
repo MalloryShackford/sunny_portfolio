@@ -13,16 +13,15 @@ const Projects = () => {
                 <ProjectItem 
                     title='Under the Radar' 
                     backgroundImg={utrImg} 
+                    githubUrl='https://github.com/MalloryShackford/cheftimmaslow'
                 />
                 </a>
                 <a href="https://pokedex-lilac-delta.vercel.app/">
                 <ProjectItem 
                     title='Pokedex' 
-                    style={{
-                        textDecoration: 'none'
-                    }}
                     backgroundImg={pokedexImg} 
                     projectUrl='/pokedex'
+                    githubUrl='https://github.com/MalloryShackford/pokedex'
                 />
                 </a>
                 <a href="https://ourdate.gurufox.ai/">
@@ -30,6 +29,7 @@ const Projects = () => {
                     title='Gurufox Ai' 
                     backgroundImg={gurufoxImg} 
                     projectUrl='/gurufox'
+                    githubUrl='https://github.com/MalloryShackford/ourdate'
                 />
                 </a>
                 {/* <ProjectItem 
