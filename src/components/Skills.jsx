@@ -19,35 +19,35 @@ const Skills = () => {
             <h2>What I Can Do</h2>
             <div className="grid-container">
         <div className="skill-item">
-            <img src={htmlImg} width={64} height={64} alt="HTML"/>
+            <img className="skill-img" src={htmlImg} alt="HTML"/>
             <h3>HTML</h3>
         </div>
         <div className="skill-item">
-            <img src={cssImg} width={64} height={64} alt="CSS"/>
+            <img className="skill-img" src={cssImg} alt="CSS"/>
             <h3>CSS</h3>
         </div>
         <div className="skill-item">
-            <img src={javascriptImg} width={64} height={64} alt="JavaScript"/>
+            <img className="skill-img" src={javascriptImg} alt="JavaScript"/>
             <h3>JavaScript</h3>
         </div>
         <div className="skill-item">
-            <img src={reactImg} width={64} height={64} alt="React"/>
+            <img className="skill-img" src={reactImg} alt="React"/>
             <h3>React.js</h3>
         </div>
         <div className="skill-item">
-            <img src={githubImg} width={64} height={64} alt="GitHub"/>
+            <img className="skill-img" src={githubImg} alt="GitHub"/>
             <h3>Github</h3>
         </div>
         <div className="skill-item">
-            <img src={pythonImg} width={64} height={64} alt="Python"/>
+            <img className="skill-img" src={pythonImg} alt="Python"/>
             <h3>Python</h3>
         </div>
         <div className="skill-item">
-            <img src={apiImg} width={64} height={64} alt="RestAPIs"/>
+            <img className="skill-img" src={apiImg} alt="RestAPIs"/>
             <h3>RestAPIs</h3>
         </div>
         <div className="skill-item">
-            <img src={djangoImg} width={64} height={64} alt="Django"/>
+            <img className="skill-img" src={djangoImg} alt="Django"/>
             <h3>Django</h3>
         </div>
     </div>

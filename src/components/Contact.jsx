@@ -8,7 +8,7 @@ const Contact = () => {
     <div id="contact" className="contact-container">
         <h2>Get In Touch</h2>
           <div className="contact-img-container">
-            <img src={headshot} alt="headshot" />
+            <img className="headshot" src={headshot} alt="headshot" />
               <p className="contact-p">I&apos;m available for freelance! Contact me and let&apos;s talk.</p>
           </div>
               <div className="form-submit-container">

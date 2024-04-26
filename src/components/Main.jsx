@@ -12,7 +12,7 @@ const Main = () => {
   return (
     <div className="bg-container">
       <Nav/>
-      <div className="intro-container">
+      <div id="home" className="intro-container">
         <p className="intro-p">Hello, I&apos;m Mallory</p>
         <p className="intro-p">A Front-End Developer</p>
           <span>I specialize in building exceptional digital experiences.</span>
