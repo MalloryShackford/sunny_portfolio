@@ -60,6 +60,7 @@ button {
 	width: 100%;
 	padding: 1rem;
 	border: none;
+	color: black;
 }
 .chevron-up {
 	display: flex;
