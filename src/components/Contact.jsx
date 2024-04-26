@@ -6,21 +6,37 @@ import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import headshot from '../assets/headshot1.png';
 import '../styles/contact.css';
 const Contact = () => {
-  const [formData, setFormData] = useState({ name: '', email: '', message: '' });
-
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({
-      ...formData,
-      [name]: value
-    });
-  };
+  const [name, setName] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    setFormData({ name: '', email: '', message: '' });
-  }
+    fetch("https://www.formbackend.com/f/cc9fe82304e2a4d0", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: JSON.stringify({ name, email }),
+    })
+    .then((response) => {
+      if (response.status === 422) {
+        throw new Error("Validation error");
+      } else if (!response.ok) {
+        throw new Error("Something went wrong");
+      }
 
+      return response.json();
+    })
+    .then(data => {
+      setSuccessMessage("Message sent successfully");
+    })
+    .catch((error) => {
+      console.error("Error:", error);
+    });
+  }
   return (
     <>
     <div id="contact" className="contact-container">
@@ -32,7 +48,24 @@ const Contact = () => {
           </div>
               <div className="form-submit-container">
                   <div className="form-container">
-                  <form
+                    {successMessage.length == 0 && 
+                    <form onSubmit={handleSubmit}>
+                      <input placeholder="Name" type="text" id="name" name="name" required onChange={(e) => setName(e.target.value)} />
+                      <input placeholder="Email" type="email" id="email" name="email" required onChange={(e) => setEmail(e.target.value)} />
+                      <textarea 
+                        style={{fontFamily: 'inter'}} 
+                        placeholder="Your Message" 
+                        className="textarea" 
+                        name="message" 
+                        onChange={(e) => setMessage(e.target.value)}
+                        rows="10" 
+                        required>  
+                      </textarea>
+                      <button type="submit">Send</button>
+                    </form>}
+                    {successMessage.length > 0 && <p>{successMessage}</p>}
+
+                  {/* <form
                     action="https://formsubmit.co/9eb8400d13809384a217392d8c97d16e" method="POST">
                     <input 
                       type="text" 
@@ -58,7 +91,7 @@ const Contact = () => {
                         rows="10" 
                         required></textarea>
                 <button onChange={handleSubmit} type="submit">Send</button>
-                  </form>
+                  </form> */}
                   </div>
               </div>
               <div className="icon-container">
