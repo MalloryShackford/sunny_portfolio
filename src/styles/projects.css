@@ -1,8 +1,8 @@
-.project-container {
+.project-bg {
 	background: rgb(188, 203, 179, 0.6);
 	padding: 2rem;
 	border-radius: 8px;
-	margin: 11rem 4rem;
+	/* margin: 11rem 4rem; */
 }
 .project-item-container {
 	display: flex;
@@ -15,7 +15,7 @@
 }
 
 .project-img {
-	width: 80%;
+	width: 100%;
 	border-radius: 8px;
 	display: flex;
 	justify-content: center;

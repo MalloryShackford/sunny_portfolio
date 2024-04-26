@@ -38,10 +38,10 @@ const Main = () => {
       <div className="skills-container">
         <Skills/>
       </div>
-      <div className="projects-container">
+      <div className="project-container">
         <Projects/>
       </div>
-      <div>
+      <div className="contact-container">
         <Contact/>
       </div>
     </div>

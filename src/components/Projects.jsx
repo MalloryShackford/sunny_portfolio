@@ -6,7 +6,7 @@ import '../styles/projects.css';
 const Projects = () => {
   return (
     <div id='projects' className="project-container">
-       <div className=''>
+       <div className='project-bg'>
             <h2 className=''>What I&apos;ve Built</h2>
             <div className='item-container'>
                 <a href="https://www.cheftimmaslow.com">

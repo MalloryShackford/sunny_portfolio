@@ -1,11 +1,14 @@
 import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
 import headshot from '../assets/headshot1.png';
 import '../styles/contact.css';
 const Contact = () => {
   return (
+    <>
     <div id="contact" className="contact-container">
+      <div className="contact-bg">
         <h2>Get In Touch</h2>
           <div className="contact-img-container">
             <img className="headshot" src={headshot} alt="headshot" />
@@ -37,6 +40,12 @@ const Contact = () => {
       </div>
       </div>
     </div>
+    <div>
+        <a href="/"><HiOutlineChevronDoubleUp className="icon chevron-up" size={30} />
+          </a>
+    </div>
+    </div>
+    </>
   )
 }
 

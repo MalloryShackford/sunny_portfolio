@@ -1,8 +1,7 @@
-.contact-container {
+.contact-bg {
 	background: rgb(188, 203, 179, 0.6);
-	/* padding: 2rem; */
+	padding: 2rem;
 	border-radius: 8px;
-	margin: 4rem;
 }
 .contact-img-container {
 	display: flex;
@@ -51,11 +50,18 @@ button {
 	width: 100%;
 	padding: 1rem;
 }
+.chevron-up {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 2rem auto 3rem auto;
+	background: rgb(188, 203, 179, 0.3);
+}
 
 @media (max-width: 742px) {
 	input,
 	textarea {
-		width: 40vw;
+		width: 50vw;
 	}
 }
 
