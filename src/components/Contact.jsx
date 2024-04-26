@@ -19,7 +19,7 @@ const Contact = () => {
         "Content-Type": "application/json",
         Accept: "application/json"
       },
-      body: JSON.stringify({ name, email }),
+      body: JSON.stringify({ name, email,  message }),
     })
     .then((response) => {
       if (response.status === 422) {
