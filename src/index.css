@@ -4,7 +4,7 @@
 	font-weight: 400;
 
 	background: url("/src/assets/sunflowers.png");
-
+	background-size: cover;
 	font-synthesis: none;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased;
