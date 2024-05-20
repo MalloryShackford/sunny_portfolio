@@ -3,7 +3,7 @@ import { AiOutlineMail } from 'react-icons/ai';
 import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { HiOutlineChevronDoubleUp } from 'react-icons/hi';
-import headshot from '../assets/headshot1.png';
+import headshot from '../assets/headshot2.png';
 import '../styles/contact.css';
 const Contact = () => {
   const [name, setName] = useState("");
