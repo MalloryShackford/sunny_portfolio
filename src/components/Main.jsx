@@ -29,7 +29,7 @@ const Main = () => {
           <a href="mailto:mallory.shackford@gmail.com"><AiOutlineMail style={{color: 'black'}} /></a>
       </div>
       <div className='icon'>
-         <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:8d02535f-319d-4470-b7aa-95522a206921" target="_blank" rel="noopener noreferrer" title="Resume"><BsFillPersonLinesFill style={{color: 'black'}} /></a>
+         <a href="https://acrobat.adobe.com/id/urn:aaid:sc:VA6C2:eda967b4-915e-4d84-837a-2e5c81c8a185" target="_blank" rel="noopener noreferrer" title="Resume"><BsFillPersonLinesFill style={{color: 'black'}} /></a>
       </div>
       </div>
       <div className="about-container">
