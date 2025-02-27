@@ -4,7 +4,7 @@ const About = () => {
     <div id="about" className="about-container">
         <div className="about-bg">
             <h2>Who I Am</h2>
-                <p>With over 15 years in the dynamic hospitality industry, I&apos;ve honed my skills in providing top-notch service, meticulous attention to detail, and ensuring customer satisfaction. Transitioning from creating memorable guest experiences, I ventured into education, dedicating a year to teaching and shaping young minds. Now, I&apos;ve embarked on a new chapter in technology, leveraging my passion for continuous learning and problem-solving in the world of programming. This career pivot reflects not just a change in profession, but my unwavering commitment to personal growth, embracing new challenges, and the pursuit of lifelong learning.</p>
+                <p>With a unique blend of experience in hospitality, web development, and education, I excel at understanding user needs, solving complex problems, and delivering exceptional experiences. My time in the hospitality industry honed my ability to build strong client relationships and provide top-tier service. In web development, I learned how to translate business goals into effective digital solutions. As a teacher, I developed strong communication and leadership skills, ensuring clarity and engagement. This diverse background allows me to bridge the gap between customers, technology, and product strategy—making me a strong fit for a Customer Success or Product Manager role.</p>
         </div>
       
     </div>
